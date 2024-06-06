@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+*{
+  font-family:serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#faq-img{
+  background-image: url('./assets/main/bg_main.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: serif;
+  border-radius: 0 0 20px 20px ;
+  height: 30vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#faq-heading{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#faq-heading h3{
+  color: rgb(233, 168, 48);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#faq-heading h1{
+  font-size: xx-large;
+  color: rgb(9, 9, 97);
+}
+
+#faq-heading h1 span{
+  color: rgb(6, 146, 165);
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#faq-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(231, 229, 229);
+  padding: 60px 60px;
+  font-size: small;
+  flex-wrap: wrap;
+
+}
+
+#faq-footer h3{
+  font-weight: 500;
+  
+}
+
+#first{
+  width: 25%;
+}
+
+#first p, #second p{
+  margin:15px 0 15px 0 ;
+}
+
+#second{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  width: 30%;
+
+}
+
+#third{
+  width: 25%;
+}
+
+#social-icon{
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  #third{
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  #third>.MuiBox-root {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 653px){
+
+  #first{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #second{
+    margin: 30px 0 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
